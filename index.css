@@ -1,0 +1,203 @@
+/*code by: Cecybara Studies ©*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(147, 147, 147);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(98, 98, 98);
+}
+
+.hover {
+    z-index: 0;
+   background-image:linear-gradient(180deg, rgba(2,0,36,0.5522584033613445) 92%, rgba(214,214,214,1) 100%), url(recursos/hover.jpg);
+    background-size: cover;
+    height: 920px;
+    position: relative;
+    color: goldenrod;
+    font-family:sans-serif;
+    justify-items: center;
+    top: 0%;
+}
+
+
+.top-bar {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 15;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    transition: background-color 0.8s ease; /* Agregar una transición suave */
+}
+
+@media screen and (max-height: 800px){
+    .top-bar.scrolled {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+    left: -10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding: 0px;
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.29);
+    padding: 20px;
+    transition: 0.5s;
+}
+.titulo-hover {
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #efefef;
+    font-size: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    top: 55%;
+    left: 17%;
+    z-index: 2;
+    font-family: Bahnschrift Light, sans-serif;
+    border: solid 1px;
+    border-color: #efd8a0;
+}
+
+.logo-hover {
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    top: 30%;
+    left: 17%;
+    height: 20%;
+}
+
+.subtitulo-hover{
+    position: absolute;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fdecbc;
+    font-size: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    top: 65%;
+    left: 15%;
+    z-index: 4;
+    font-family: Bahnschrift Light, sans-serif;
+    
+}
+
+
+
+.info-parte1 {
+    position: relative;
+    height: 1500px;
+    background-color: #d6d6d6;
+    z-index: 1;
+    justify-items: center;
+    bottom: 25px;
+}
+
+.search {
+    position: relative;
+    z-index: 2;
+    top: 5%; /* Cambiado a porcentaje */
+    align-content: center;
+    font-family: Bahnschrift Light, sans-serif;
+    margin-left: 10%; /* Cambiado a porcentaje */
+    margin-right: 5%; /* Cambiado a porcentaje */
+    width: 80%; /* Cambiado a porcentaje */
+    display: inline-block;
+}
+
+/* Estilos para el campo de búsqueda */
+.search-text {
+    font-size: 2em; /* Cambiado a em */
+    position: relative;
+    margin-left: 1em; /* Cambiado a em */
+    margin-top: 2em; /* Cambiado a em */
+    display: block; /* Cambiado a block */
+}
+
+/* Estilos para el botón de búsqueda */
+.re-search {
+    position: relative;
+    border: solid 1px;
+    border-color: black;
+    width: 60%; /* Cambiado a porcentaje */
+    height: 2em; /* Cambiado a em */
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+    bottom: 4.5em; /* Cambiado a em */
+    border-radius: 6px;
+    margin-left: 20%; /* Cambiado a porcentaje */
+    display: block; /* Cambiado a block */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .search {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .search-text {
+        font-size: 1.5em;
+        margin-left: 0.5em;
+        margin-top: 1em;
+    }
+
+    .re-search {
+        width: 80%;
+        height: 2em;
+        bottom: 0.5em;
+        margin-left: 10%;
+    }
+}
+.re-search:hover{
+    background-color: rgba(255, 255, 255, 0.54);
+    transition: 0.5s;
+} 
+
+/* Dile que la amas como yo la amaba
+dile quien es mejor de tú y yo en la cama
+yo la llevo al cielo, que hasta tengo miedo
+en caer de nuevo, enrredarme en su cuerpo
+mi alma esta vacia pero estoy sonriendo
+
+Extssy Model - Junior H */
+
